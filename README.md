@@ -19,6 +19,18 @@ récurrents du jeu tel que les arbres ou encore les différents animaux. Cette p
 trouve sont chargés.
 Enfin concernant les cubes, ils contiennent des informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
+## Première étape : générer la base du terrain ## 
+## Deuxième étape : ? ## 
+## Troisième étape : appliquer les textures ## 
+
+
+
+
+
+
+
+
+
 NOTES :
 Le document par exemple en markdown sous repo github que vous me rendrez contiendra 
 des explications, 
