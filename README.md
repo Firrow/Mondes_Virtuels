@@ -1,6 +1,12 @@
 # Mondes_Virtuels : Génération d'un terrain de type Minecraft #
 
 ## But du projet ## 
+Notre objectif est de comprendre comment sont générés les mondes minecraft et de recréer sous Unity un mini-monde généré procéduralement et composé de cubes
+de taille similaire avec différentes textures.
+
+
+## Comment générer procéduralement le terrain ## 
+
 NOTES :
 Le document par exemple en markdown sous repo github que vous me rendrez contiendra 
 des explications, 
