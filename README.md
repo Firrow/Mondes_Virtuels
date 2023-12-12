@@ -17,7 +17,7 @@ La génération de terrain se déroule en deux temps. Il y a d'abord la phase de
 structures que l'on peut trouver dans le jeu comme les grottes ou les villages. Vient ensuite la phase de population, permettant de faire apparaitre des éléments 
 récurrents du jeu tel que les arbres ou encore les différents animaux. Cette phase ne se lance que lorsque les 3 chunks adjacent à celui sur lequel le joueur se
 trouve sont chargés.
-
+Enfin concernant les cubes, ils contiennent des informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
 NOTES :
 Le document par exemple en markdown sous repo github que vous me rendrez contiendra 
