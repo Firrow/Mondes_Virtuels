@@ -20,7 +20,7 @@ trouve sont chargés.
 Enfin concernant les cubes, ils contiennent des informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
 ## Première étape : générer la base du terrain ## 
-## Deuxième étape : ? ## 
+## Deuxième étape : appliquer des règles pour assigner les types des blocs ## 
 ## Troisième étape : appliquer les textures ## 
 
 
