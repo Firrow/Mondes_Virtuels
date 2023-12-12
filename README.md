@@ -9,6 +9,10 @@ de taille similaire avec différentes textures.
 Dans Minecraft, les mondes sont générés procéduralement grâce à une fonction de Perlin Noise (bruit de Perlin) ainsi qu'un nombre aléatoire appelé "seed".
 Ce nombre permet de générer un nombre aléatoire grâce à une fonction et de retrouver ce nombre si on réutilise ce point de départ. Avoir un aléatoire peut 
 permettre plusieurs choses, notamment de se placer à un endroit différent dans le bruit de Perlin, changer le spawn des éléments du jeu, etc. 
+Les mondes minecraft sont générés portions par portions appelées chunk à partir de la position du joueur. Ces chunk, générés grâce à la seed mesurent 16
+blocs de large, 16 blocs de long et 256 blocs de haut.
+
+
 NOTES :
 Le document par exemple en markdown sous repo github que vous me rendrez contiendra 
 des explications, 
