@@ -42,11 +42,18 @@ terrain en x et en z afin de calculer la hauteur du terrain.
 | *Fréquence de 0.01* |
 
 Enfin, avant de placer les petits cubes qui vont composer la map, on vérifie si la position en y du cube est inférieur à la hauteur calculer par la fonction de
-Perlin Noise multiplier par l'amplitude. Si c'est le cas, alors on ajoute le cube au terrain.
+Perlin Noise multiplié par l'amplitude. Si c'est le cas, alors on ajoute le cube au terrain.
 
 
 ## Deuxième étape : appliquer des règles pour assigner les types des blocs ## 
+Le but ensuite est d'assigner à chaque cube un type qui définira sa texture.
+
 ## Troisième étape : appliquer les textures ## 
+Pour cette partie, nous avons dans un premier temps créer un matérial de type Unlit/Texture avec une image contenant plusieurs types de textures différentes.
+| ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/a9567bae-6cc5-4dd8-8ac8-38a1e292ca69) | 
+|:--:| 
+| *Image utilisée pour la création du material* |
+
 
 
 
