@@ -32,6 +32,15 @@ Pour commencer, nous sommes partis d'un cube placé dans la map pour générer l
 Dans notre fonction <code>generate()</code>, nous parcourons le terrain selon trois paramètres : la largeur, l'amplitude et la longueur pour appliquer le bruit de Perlin. 
 Cette fonction est intégrée dans la librairie Mathf. Nous utilisons en paramètre de cette méthode une valeur de fréquence permettant de donner du relief au 
 terrain en x et en z afin de calculer la hauteur du terrain.
+
+| ![img.jpg](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/f5657213-94ea-43ef-abd5-ecfcfef32026) | 
+|:--:| 
+| *Fréquence de 0.1* |
+
+| ![img2.jpg](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/ad422a87-46f5-49b8-a518-383c5e3a3103) | 
+|:--:| 
+| *Fréquence de 0.01* |
+
 Enfin, avant de placer les petits cubes qui vont composer la map, on vérifie si la position en y du cube est inférieur à la hauteur calculer par la fonction de
 Perlin Noise multiplier par l'amplitude. Si c'est le cas, alors on ajoute le cube au terrain.
 
