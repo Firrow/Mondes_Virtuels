@@ -23,6 +23,12 @@ trouve sont chargés.
 Enfin concernant les cubes, ils contiennent plusieurs informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
 ## Première étape : générer la base du terrain ## 
+Pour commencer, nous sommes partis d'un cube placé dans la map pour générer le terrain tout autour.
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/9a1e9670-b833-4da8-80b8-91d64b1e2b93)
+
+
+
+
 ## Deuxième étape : appliquer des règles pour assigner les types des blocs ## 
 ## Troisième étape : appliquer les textures ## 
 
