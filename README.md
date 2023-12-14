@@ -50,9 +50,12 @@ Le but ensuite est d'assigner à chaque cube un type qui définira sa texture.
 
 ## Troisième étape : appliquer les textures ## 
 Pour cette partie, nous avons dans un premier temps créer un matérial de type Unlit/Texture avec une image contenant plusieurs types de textures différentes.
-| ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/a9567bae-6cc5-4dd8-8ac8-38a1e292ca69) | 
+| ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/c6e3302a-2f15-4837-864c-cb15a2383ad0) | 
 |:--:| 
 | *Image utilisée pour la création du material* |
+Cette image est divisée en quatre dans la classe Cube par le getter <code>NormalizedSizeBlockTextureSize</code>. Ensuite, dans les fonctions <code>SetTextureSide(int textureID)</code>,
+<code>SetTextureTop(int textureID)</code>, <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
+
 
 
 
