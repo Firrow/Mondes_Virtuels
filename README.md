@@ -22,11 +22,18 @@ trouve sont chargés.
 
 Enfin concernant les cubes, ils contiennent plusieurs informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
+METTRE SOURCES !
+
 ## Première étape : générer la base du terrain ## 
-Pour commencer, nous sommes partis d'un cube placé dans la map pour générer le terrain tout autour.
-![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/9a1e9670-b833-4da8-80b8-91d64b1e2b93)
+Pour commencer, nous sommes partis d'un cube placé dans la map pour générer le terrain tout autour. 
 
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/64b360b0-5486-4348-9a49-cc24dde3c598)
 
+Dans notre fonction generate(), nous parcourons le terrain selon trois paramètres : la largeur, l'amplitude et la longueur pour appliquer le bruit de Perlin. 
+Cette fonction est intégrée dans la librairie Mathf. Nous utilisons en paramètre de cette méthode une valeur de fréquence permettant de donner du relief au 
+terrain en x et en z afin de calculer la hauteur du terrain.
+Enfin, avant de placer les petits cubes qui vont composer la map, on vérifie si la position en y du cube est inférieur à la hauteur calculer par la fonction de
+Perlin Noise multiplier par l'amplitude. Si c'est le cas, alors on ajoute le cube au terrain.
 
 
 ## Deuxième étape : appliquer des règles pour assigner les types des blocs ## 
