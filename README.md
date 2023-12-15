@@ -63,12 +63,22 @@ Cette image est divisée en seize dans la classe Cube par le getter <code>Normal
 <code>SetTextureTop(int textureID)</code> et <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
 
 Le nature du cube est définit dans la classe CubeMap lorsque tous les cubes ont été créés.
+METTRE SCEENSHOTS CODE
+
 
 ## Quatrième étape : optimisation
+Lors de la génération de grandes maps, la perte d'image par seconde commençait à se voir. Nous avions donc deux problèmes :
+- le jeu laguait ;
+- nous ne pouvions pas créer de terrain suffisamment grand pour permettre de jouer dessus.
+
+Nous avions tester dans un premier temps de cacher les cubes éloignés du joueur. Cependant, ces cubes étant toujours charger dans la scène, la performance n'a pas été améliorée.
+Nous avons alors eu l'idée de créer les cubes au fur et à mesure en fonction de leur distance par rapport au joueur. Cependant, nous ne pouvions pas déterminer le type du cube car
+les cubes ne connaissaient pas le type de leurs voisins.
+
+Nous avons finalement décidé de générer toute la map puis d'instancier uniquement les cubes proches du joueur.
 
 
-
-
+## Dernière étape : création d'un joueur contrôlable au clavier
 
 
 
