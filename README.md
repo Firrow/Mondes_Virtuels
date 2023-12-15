@@ -48,6 +48,12 @@ définit par le bruit de Perlin. La fonction pour récupérer ce bruit est inté
 ## Deuxième étape : appliquer des règles pour assigner les types des blocs
 Le but ensuite est d'assigner à chaque cube un type qui définira sa texture.
 
+Nous disposons de trois règles :
+- le cube du dessus est un bloc d'herbe ;
+- les blocs du dessous sont des blocs de terre s'ils sont au dessus d'une certaine hauteur ;
+- les autres blocs sont des blocs de roche.
+
+
 ## Troisième étape : appliquer les textures
 Pour cette partie, nous avons dans un premier temps créer un matérial de type Unlit/Texture avec une image contenant plusieurs types de textures différentes.
 | ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/c6e3302a-2f15-4837-864c-cb15a2383ad0) | 
