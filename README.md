@@ -1,11 +1,11 @@
-# Mondes_Virtuels : Génération d'un terrain de type Minecraft #
+# Mondes_Virtuels : Génération d'un terrain de type Minecraft
 
-## But du projet ## 
+## But du projet
 Notre objectif est de comprendre comment sont générés les mondes dans le jeu Minecraft et de recréer sous Unity un mini-monde généré procéduralement et composé 
 de cubes de taille similaire avec différentes textures.
 
 
-## Existant ## 
+## Existant
 Dans Minecraft, les mondes sont générés procéduralement grâce à une fonction de Perlin Noise (bruit de Perlin) ainsi qu'un nombre appelé "seed".
 Ce nombre permet de générer un nombre aléatoire grâce à une fonction et de retrouver ce nombre si on réutilise ce point de départ. Avoir un aléatoire peut 
 permettre plusieurs choses, notamment de se placer à un endroit différent dans le bruit de Perlin, changer le spawn des éléments du jeu, etc. 
@@ -24,14 +24,16 @@ Enfin concernant les cubes, ils contiennent plusieurs informations notamment con
 
 METTRE SOURCES !
 
-## Première étape : générer la base du terrain ## 
-Pour commencer, nous sommes partis d'un cube placé dans la map pour générer le terrain tout autour. 
+## Première étape : générer la base du terrain
+Pour commencer, nous avons visualisé le bruit de Perlin à l'aide de Gizmo. Nous avons ensuite utiliser la variation du bruit de Perlin pour définir la hauteur de notre
+terrain.
+Nous générons notre map en fonction de deux paramètres : la longueur et la largeur. Ensuite nous générons notre bruit de Perlin en fonction de deux paramètres : l'amplitude
+et la fréquence. L'amplitude fait donc varier la hauteur des montagnes tandis que la fréquence fait varier l'étalement des montagnes.
 
 ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/64b360b0-5486-4348-9a49-cc24dde3c598)
 
-Dans notre fonction <code>generate()</code>, nous parcourons le terrain selon trois paramètres : la largeur, l'amplitude et la longueur pour appliquer le bruit de Perlin. 
-Cette fonction est intégrée dans la librairie Mathf. Nous utilisons en paramètre de cette méthode une valeur de fréquence permettant de donner du relief au 
-terrain en x et en z afin de calculer la hauteur du terrain.
+Dans notre fonction <code>generate()</code>, nous parcourons le terrain selon trois paramètres : la largeur, l'amplitude et la longueur pour créer nos cube sous la hauteur 
+définit par le bruit de Perlin. La fonction pour récupérer ce bruit est intégrée dans la librairie Mathf.
 
 | ![img.jpg](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/f5657213-94ea-43ef-abd5-ecfcfef32026) | 
 |:--:| 
@@ -41,14 +43,11 @@ terrain en x et en z afin de calculer la hauteur du terrain.
 |:--:| 
 | *Fréquence de 0.01* |
 
-Enfin, avant de placer les petits cubes qui vont composer la map, on vérifie si la position en y du cube est inférieur à la hauteur calculer par la fonction de
-Perlin Noise multiplié par l'amplitude. Si c'est le cas, alors on ajoute le cube au terrain.
 
-
-## Deuxième étape : appliquer des règles pour assigner les types des blocs ## 
+## Deuxième étape : appliquer des règles pour assigner les types des blocs
 Le but ensuite est d'assigner à chaque cube un type qui définira sa texture.
 
-## Troisième étape : appliquer les textures ## 
+## Troisième étape : appliquer les textures
 Pour cette partie, nous avons dans un premier temps créer un matérial de type Unlit/Texture avec une image contenant plusieurs types de textures différentes.
 | ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/c6e3302a-2f15-4837-864c-cb15a2383ad0) | 
 |:--:| 
@@ -56,7 +55,7 @@ Pour cette partie, nous avons dans un premier temps créer un matérial de type 
 Cette image est divisée en quatre dans la classe Cube par le getter <code>NormalizedSizeBlockTextureSize</code>. Ensuite, dans les fonctions <code>SetTextureSide(int textureID)</code>,
 <code>SetTextureTop(int textureID)</code>, <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
 
-
+## Quatrième étape : optimisation
 
 
 
