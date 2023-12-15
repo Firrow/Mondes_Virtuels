@@ -27,6 +27,7 @@ METTRE SOURCES !
 ## Première étape : générer la base du terrain
 Pour commencer, nous avons visualisé le bruit de Perlin à l'aide de Gizmo. Nous avons ensuite utiliser la variation du bruit de Perlin pour définir la hauteur de notre
 terrain.
+
 Nous générons notre map en fonction de deux paramètres : la longueur et la largeur. Ensuite nous générons notre bruit de Perlin en fonction de deux paramètres : l'amplitude
 et la fréquence. L'amplitude fait donc varier la hauteur des montagnes tandis que la fréquence fait varier l'étalement des montagnes.
 
