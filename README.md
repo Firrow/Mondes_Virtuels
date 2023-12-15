@@ -59,8 +59,10 @@ Pour cette partie, nous avons dans un premier temps créer un matérial de type 
 | ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/c6e3302a-2f15-4837-864c-cb15a2383ad0) | 
 |:--:| 
 | *Image utilisée pour la création du material* |
-Cette image est divisée en quatre dans la classe Cube par le getter <code>NormalizedSizeBlockTextureSize</code>. Ensuite, dans les fonctions <code>SetTextureSide(int textureID)</code>,
-<code>SetTextureTop(int textureID)</code>, <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
+Cette image est divisée en seize dans la classe Cube par le getter <code>NormalizedSizeBlockTextureSize</code>. Ensuite, dans les fonctions <code>SetTextureSide(int textureID)</code>,
+<code>SetTextureTop(int textureID)</code> et <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
+
+Le nature du cube est définit dans la classe CubeMap lorsque tous les cubes ont été créés.
 
 ## Quatrième étape : optimisation
 
