@@ -64,8 +64,12 @@ Pour cette partie, nous avons dans un premier temps créer un matérial de type 
 Cette image est divisée en seize dans la classe Cube par le getter <code>NormalizedSizeBlockTextureSize</code>. Ensuite, dans les fonctions <code>SetTextureSide(int textureID)</code>,
 <code>SetTextureTop(int textureID)</code> et <code>SetTextureBottom(int textureID)</code>, la texture est appliquée au cube en fonction de l'indice sélectionné.
 
-Le nature du cube est définit dans la classe CubeMap lorsque tous les cubes ont été créés.
-METTRE SCEENSHOTS CODE
+Le nature du cube est définit dans la classe CubeMap lorsque tous les cubes ont été créés, notamment dans la fonction <code>setCubeType()</code> montrée plus haut
+ainsi que dans <code>applyToAllCubes()</code>.
+
+Cela nous permet d'obtenir une map comme celle-ci :
+
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/3489abbe-2de9-4b5c-ab3d-9c3074478fa7)
 
 
 ## Quatrième étape : optimisation
