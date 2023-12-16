@@ -74,7 +74,7 @@ Cela nous permet d'obtenir une map comme celle-ci :
 
 ## Quatrième étape : optimisation
 Lors de la génération de grandes maps, la perte d'image par seconde commençait à se voir. Nous avions donc deux problèmes :
-- le jeu laguait ;
+- le jeu voyait son nombre de FPS diminuer ;
 - nous ne pouvions pas créer de terrain suffisamment grand pour permettre de jouer dessus.
 
 Nous avions tester dans un premier temps de cacher les cubes éloignés du joueur. Cependant, ces cubes étant toujours charger dans la scène, la performance n'a pas été améliorée.
