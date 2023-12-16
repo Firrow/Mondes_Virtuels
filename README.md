@@ -23,7 +23,6 @@ trouve sont chargés.
 Enfin concernant les cubes, ils contiennent plusieurs informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
 
-
 ## Première étape : générer la base du terrain
 Pour commencer, nous avons visualisé le bruit de Perlin à l'aide de Gizmo. Nous avons ensuite utiliser la variation du bruit de Perlin pour définir la hauteur de notre
 terrain.
@@ -52,6 +51,9 @@ Nous disposons de trois règles :
 - le cube du dessus est un bloc d'herbe ;
 - les blocs du dessous sont des blocs de terre s'ils sont au dessus d'une certaine hauteur ;
 - les autres blocs sont des blocs de roche.
+
+Ces règles sont appliquée dans la fonction ci-dessous :
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/2af0d19e-1bd3-4ad7-be6f-ac7537da11fe)
 
 
 ## Troisième étape : appliquer les textures
