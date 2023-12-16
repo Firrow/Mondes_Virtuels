@@ -22,7 +22,7 @@ trouve sont chargés.
 
 Enfin concernant les cubes, ils contiennent plusieurs informations notamment concernant leur type, leur comportement, leur résistance (pour le minage), etc.
 
-METTRE SOURCES !
+
 
 ## Première étape : générer la base du terrain
 Pour commencer, nous avons visualisé le bruit de Perlin à l'aide de Gizmo. Nous avons ensuite utiliser la variation du bruit de Perlin pour définir la hauteur de notre
@@ -84,12 +84,13 @@ Nous avons finalement décidé de générer toute la map puis d'instancier uniqu
 
 
 # Nos sources (A COMPLETER)
-https://www.pcgbook.com/
-http://pcg.wikidot.com/
+Inspiration pour notre projet : https://www.youtube.com/watch?v=s0DwskCw00w
+How Minecraft worlds are generated : https://www.alphr.com/how-minecraft-generates-worlds/
+Procedural Content Generation in Games : https://www.pcgbook.com/
+Procedural Content Generation : http://pcg.wikidot.com/
 Perlin Noise : https://www.youtube.com/watch?v=WP-Bm65Q-1Y
-https://www.youtube.com/watch?v=Y-fDGOqHQZA
-https://www.youtube.com/watch?v=3LQmLT4zvpo
-https://www.youtube.com/watch?v=s0DwskCw00w
+Create Texture Wrap on cube : https://www.youtube.com/watch?v=Y-fDGOqHQZA
+Generate a chunk : https://www.youtube.com/watch?v=3LQmLT4zvpo
 
 
 NOTES :
