@@ -117,12 +117,22 @@ remarquons quelques soucis de lague car nous dessinons les cubes à chaques fram
 Si l'on commente ce morceau de code, le problème disparait mais les textures des cubes ne sont pas chargées. Il faudrait donc trouver un moyen de mettre à jour les
 textures des blocs sans devoir recharger tous les blocs du terrain.
 
+Enfin, pour compléter notre map, en plus des biomes et des structures évoquées plus haut, nous pourrions générer des populations d'arbres différents en fonction des
+biomes, d'animaux, de monstres en tout genre, etc. Nous pourrions aussi ajouter des sources d'eau qui se répendraient sur le terrain en fonction de leur hauteur et de
+la gravité.
+
 
 # Nos sources principales
 Inspiration pour notre projet : https://www.youtube.com/watch?v=s0DwskCw00w
+
 How Minecraft worlds are generated : https://www.alphr.com/how-minecraft-generates-worlds/
+
 Procedural Content Generation in Games : https://www.pcgbook.com/
+
 Procedural Content Generation : http://pcg.wikidot.com/
+
 Perlin Noise : https://www.youtube.com/watch?v=WP-Bm65Q-1Y
+
 Create Texture Wrap on cube : https://www.youtube.com/watch?v=Y-fDGOqHQZA
+
 Generate a chunk : https://www.youtube.com/watch?v=3LQmLT4zvpo
