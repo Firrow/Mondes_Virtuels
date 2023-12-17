@@ -110,9 +110,11 @@ Comme dit dans la première partie, la génération d'un monde minecraft se fait
 ainsi que les structures de type grottes ou village. Nous pourrions donc continuer le projet en ajoutant ces structures avant de passer à la phase de population.
 
 Cependant, nous rencontrons encore actuellement quelques problèmes d'optimisation. En effet, lorsque nous lançons le projet et que nous bougeons dans l'environnement, nous 
-remarquons quelques soucis de lague car nous dessinons les cubes à chaques frame dans le Update() de la classe Main :
+remarquons quelques soucis de lague car nous dessinons les cubes à chaques frame dans le <code>Update()</code> de la classe Main :
+
 ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/bbdf3e1a-c1c9-44ea-ae3e-47e70136f8cc)
-Cependant, si l'on commente ce morceau de code, le problème disparait mais les textures des cubes ne sont pas chargées. Il faudrait donc trouver un moyen de mettre à jour les
+
+Si l'on commente ce morceau de code, le problème disparait mais les textures des cubes ne sont pas chargées. Il faudrait donc trouver un moyen de mettre à jour les
 textures des blocs sans devoir recharger tous les blocs du terrain.
 
 
