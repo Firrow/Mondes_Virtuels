@@ -102,13 +102,21 @@ Dans le script joueur, nous prenons en compte les inputs du joueur (ZQSD + Espac
 Le joueur peut contrôler sa rotation grâce à la récupération de la position de la souris utiliser pour mettre à jour la rotation du joueur.
 
 ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/386d988a-7027-433a-8245-4d20479029ed)
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/a2f2e01e-4c6f-4d53-a9a6-9f14dbd23517)
 
 
 ## Possibilités d'évolution du projet
+Comme dit dans la première partie, la génération d'un monde minecraft se fait en plusieurs parties. Dans la première phase, nous n'avons pas encore créer les différents biomes
+ainsi que les structures de type grottes ou village. Nous pourrions donc continuer le projet en ajoutant ces structures avant de passer à la phase de population.
+
+Cependant, nous rencontrons encore actuellement quelques problèmes d'optimisation. En effet, lorsque nous lançons le projet et que nous bougeons dans l'environnement, nous 
+remarquons quelques soucis de lague car nous dessinons les cubes à chaques frame dans le Update() de la classe Main :
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/bbdf3e1a-c1c9-44ea-ae3e-47e70136f8cc)
+Cependant, si l'on commente ce morceau de code, le problème disparait mais les textures des cubes ne sont pas chargées. Il faudrait donc trouver un moyen de mettre à jour les
+textures des blocs sans devoir recharger tous les blocs du terrain.
 
 
-
-# Nos sources (A COMPLETER)
+# Nos sources principales
 Inspiration pour notre projet : https://www.youtube.com/watch?v=s0DwskCw00w
 How Minecraft worlds are generated : https://www.alphr.com/how-minecraft-generates-worlds/
 Procedural Content Generation in Games : https://www.pcgbook.com/
@@ -116,11 +124,3 @@ Procedural Content Generation : http://pcg.wikidot.com/
 Perlin Noise : https://www.youtube.com/watch?v=WP-Bm65Q-1Y
 Create Texture Wrap on cube : https://www.youtube.com/watch?v=Y-fDGOqHQZA
 Generate a chunk : https://www.youtube.com/watch?v=3LQmLT4zvpo
-
-
-NOTES :
-Le document par exemple en markdown sous repo github que vous me rendrez contiendra 
-des explications, 
-des liens vers les documents/ sites qui vous ont inspirés, 
-des parties de codes commentés qui vous paraissent importantes, 
-des captures d’écran de votre travail.
