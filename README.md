@@ -86,10 +86,25 @@ script CubeMap.
 ![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/ef5d449b-1772-43e2-b2d3-62279348446c)
 
 Lorsque un cube se trouve à une distance inférieur à 20 cube du joueur, le cube est affiché, sinon il reste caché.
+Voici le résultat :
+| ![img.jpg](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/04a0086e-b41e-4dd2-9f40-b7e02c565744) | 
+|:--:| 
+| *Position du joueur en x=3.57 y=15.71 z=16.15 |
+| ![img.jpg](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/9aa06b49-f05b-4e2a-8e00-f9f7611d93f5) | 
+|:--:| 
+| *Position du joueur en x=15.07 y=17.52 z=16.18 |
+
 
 
 ## Dernière étape : création d'un joueur contrôlable au clavier
+Pour créer un joueur, nous avons créer un rectangle contenant un Rigidbody ainsi qu'une caméra afin d'avoir une vu à la première personne.
+Dans le script joueur, nous prenons en compte les inputs du joueur (ZQSD + Espace) puis nous mettons à jour la position du joueur grâce à la fonction <code>Translate()</code>.
+Le joueur peut contrôler sa rotation grâce à la récupération de la position de la souris utiliser pour mettre à jour la rotation du joueur.
 
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/386d988a-7027-433a-8245-4d20479029ed)
+
+
+## Possibilités d'évolution du projet
 
 
 
