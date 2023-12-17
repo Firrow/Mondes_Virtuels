@@ -81,7 +81,11 @@ Nous avions tester dans un premier temps de cacher les cubes éloignés du joueu
 Nous avons alors eu l'idée de créer les cubes au fur et à mesure en fonction de leur distance par rapport au joueur. Cependant, nous ne pouvions pas déterminer le type du cube car
 les cubes ne connaissaient pas le type de leurs voisins.
 
-Nous avons finalement décidé de générer toute la map puis d'instancier uniquement les cubes proches du joueur.
+Nous avons finalement décidé de générer toute la map puis d'instancier uniquement les cubes proches du joueur grâce à la fonction <code>displayCubeIfNear()</code> présente dans le 
+script CubeMap.
+![image](https://github.com/Firrow/Mondes_Virtuels/assets/73218766/ef5d449b-1772-43e2-b2d3-62279348446c)
+
+Lorsque un cube se trouve à une distance inférieur à 20 cube du joueur, le cube est affiché, sinon il reste caché.
 
 
 ## Dernière étape : création d'un joueur contrôlable au clavier
