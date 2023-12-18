@@ -4,6 +4,8 @@
 Notre objectif est de comprendre comment sont générés les mondes dans le jeu Minecraft et de recréer sous Unity un mini-monde généré procéduralement et composé 
 de cubes de taille similaire avec différentes textures.
 
+Le projet à été réalisé par Bonnot Manon - Clochard Baptiste - Lieghio Thomas en grande partie grâce à la technique du pair programming.
+
 
 ## Existant
 Dans Minecraft, les mondes sont générés procéduralement grâce à une fonction de Perlin Noise (bruit de Perlin) ainsi qu'un nombre appelé "seed".
