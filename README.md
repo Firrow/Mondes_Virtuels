@@ -1,5 +1,7 @@
 # Mondes_Virtuels : Génération d'un terrain de type Minecraft
 
+CECI EST LE README DU PROJET PRESENT SUR GITLAB
+
 ## But du projet
 Notre objectif est de comprendre comment sont générés les mondes dans le jeu Minecraft et de recréer sous Unity un mini-monde généré procéduralement et composé 
 de cubes de taille similaire avec différentes textures.
